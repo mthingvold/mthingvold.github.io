@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>midtermstuff</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+Example 1:
+</p>
+	
+<p>
+	<span id="-deductive theory"></span><strong id="deductive theory">deductive theory</strong>
+</p>
+<ol>
+<li>
+Show that ((p &amp; q) | (~r | q)) -&gt; ( r -&gt; q)
+
+<ol>
+<li>
+( p ∧ q ) | ( ~r ∨ q)			assumpt.
+
+<li>
+p | q					assumpt.
+
+<li>
+r						assumpt.
+
+<li>
+q						2, spec.
+
+<li>
+r-&gt;q						3,4,D.T.
+
+<li>
+(p &amp; q) -&gt; (r-&gt;q)				2,5,D.T.
+
+<li>
+(~r | q)					assumpt.
+
+<li>
+r						assupt.
+
+<li>
+q						7,8,elim
+
+<li>
+r-&gt; q					8,9,D.T.
+
+<li>
+( ~r | q) -&gt; ( r -&gt; q)			7,10 D.T.
+
+<li>
+r-&gt;q					1,6,11  Cases
+
+<li>
+(( p &amp; q) | (~r | q ) ) -&gt; ( r -&gt; q)	1,12, D.T.
+
+</ol>
+</ol>
+		 
+
+<ol>
+<li>
+
+
+<ol>
+<li>
+show statement is invalid w/ an interpretatin
+				∀(P(x) -&gt; S(x) -&gt; ∃x(P(x)∧S(x)
+				draw a truth table of this
+
+<li>
+give a model where both cases are true
+
+<li>
+
+
+</ol>
+</ol>
+				
+<ol>
+<li>
+		
+
+<ol>
+<li>
+∀y(∀x(P(x) →P(y)) ∧ R(y))		prem ∃y(R(y)∧P(y))
+
+<li>
+∀z(R(z)→∃y(P(y)))			prem
+
+<li>
+∀x (P(x) → P(a))∧R(a)		1,EI,S^y
+
+<li>
+R(a)					3, spec
+
+<li>
+R(a) → ∃y(P(y))			2, UI, S^z
+
+<li>
+∃y(P(y))				4,5, m.p.
+
+<li>
+P(b)					6, EI, S yb
+
+<li>
+∀x(P(x)→P(a))			3, spec
+
+<li>
+P(b)-&gt;P(a)				8, UI, S ?k
+
+<li>
+P(a)				7,9,MP
+
+<li>
+R(a)∧P(a)				4,10,conj.
+
+<li>
+∃y(R(y)∧P(y))			11,EG
+		4)
+			There is a sequence d such that d, =2 and d(sub)k = d(sub)k-1  /k	Show for all ints n&gt;=1, d(sub)n=2/n!
+			I.H. d(sub)k = 2/k!	for all k&gt;=1
+			Base Case k=1
+				d(sub)1=2
+				2/1! =2		i.h holds for the base case k=1
+			Inductive Step Show d(sub k+1)= 2/(k+1)
+			dk+1 = dk/k+1 = dk(1/k+1) = (2/k!) (1/(k+1))	I.H.
+			=2/((k+1)k!) = 2/(k+1)!
+
+</ol>
+</ol>
+			
+<p>
+			∴ By induction d(sub)k is equal to 2/k!
+</p>
+
+</body>
+</html>

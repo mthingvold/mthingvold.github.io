@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Lecture9</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+Difference Quotients
+eg suppose a=x^2 b=5x c=7
+Find (a-b)/c 	(x^2-5x)/7
+</p>
+
+<p>
+suppose f(x) =x^2 +7
+find (f(x+h)-f(x))/h
+</p>
+
+<p>
+f(x+h)=(x+h)<sup><small>2 + 7 = x</small></sup>2+2xh+h<sup><small>2=7		h=h	(f(x+h)-f(x))/h = (x</small></sup>2+2xh+4<sup><small>2+7-(x</small></sup>2+7))/h cancel x^2,and 7 factor out h on top
+h(2x+h)/h= <span id="-2x+h"></span><strong id="2x+h">2x+h</strong>
+</p>
+
+<p>
+End of review period :'ccc
+</p>
+
+
+<div id="2.1 Limits and continuity"><h1 id="2.1 Limits and continuity">2.1 Limits and continuity</h1></div>
+<p>
+Everything learned has been review calculus starts here
+at the heart of calculus is a new concept the limit of  a function
+</p>
+
+<p>
+lim f(x)
+x-&gt;a
+</p>
+
+<p>
+asks the question: "What is the limit of f(x) as x approaches a?
+</p>
+
+<p>
+"x approaches a" means that we must consider a progression of numbers getting closer and closer to the number a e.g If a= 5 then consider x=4.5, x=4.9 x=4.9999
+a series of numbers that get closer without actually getting there.
+</p>
+
+<p>
+x-&gt; a^- means x approaches a from the left
+x-&gt;a^+ means x approaches a from the right 		x never touches a
+</p>
+
+<p>
+x-&gt;a means x is approaching a but from both sides
+</p>
+
+<p>
+lim f(x) asks "as x takes values
+x-&gt;a
+closer and closer to the number a, does f(x) also get closer to the number L
+if yes then we say that the limit exists and limx-&gt;a f(x) = L
+if no then we say that the limit does not exist
+</p>
+
+<p>
+Initially we have two options when calculating a limit:
+</p>
+<ol>
+<li>
+make a table of values if the function is given as a formula
+
+<li>
+Trace along the graph if the function is given pictorially
+	(he'll give a better step-by-step procedure shortly)
+
+</ol>
+	
+<p>
+	lim(x^2+3x) x-&gt;2
+</p>
+	
+<p>
+	x= f(x)=x^2+3x
+	1.5 6.75
+	1.9 9.31
+	1.99 9.9301
+	1.999 9.99
+</p>
+	
+<p>
+	2.5 13.75
+	2.1 10.71
+	2.00001 10.00007
+</p>
+	
+<p>
+	lim(x^2+3x=10) x-&gt;2
+</p>
+	
+<p>
+	find lim(1/x^2)  x-&gt;0
+	x	f(x)=1/x^2
+	1	1
+	0.1	100
+	0.01	10000
+	0.00001	10000000000
+	-1	1
+	-.1	100
+	-0.01	10000
+	-0.00001
+</p>
+	
+<p>
+	therfrome lim1/x^2=inf x-&gt;0
+</p>
+	
+<p>
+	eg find
+	lim f(x) if f(x) = {x+2 if x&lt;=1
+		x-&gt;1	   { -x if x&gt;1
+</p>
+	
+<p>
+	x		f(x)=x+2
+	0.5		2.5
+	0.9		2.9
+	0.99		2.99
+		y-&gt;3^-  f(x)=-x
+	1.5		-.1.5
+	1.1		-1.1
+	1.01		-1.01
+		y-&gt;-1^-
+</p>
+		
+<p>
+		3!=-1 therfore lim f(x) does not exist
+</p>
+		
+		
+<div id="Procedure to find the limit of a function lim f(x) x-&gt;a"><h1 id="Procedure to find the limit of a function lim f(x) x-&gt;a" class="justcenter">Procedure to find the limit of a function lim f(x) x-&gt;a</h1></div>
+	
+<p>
+	Try calculating f(a)
+</p>
+<ol>
+<li>
+if f(a) is a real number ( and a is not an endpoint of the domain of f(x) or a transition point of a piecewise function), then limf(x)=f(a)
+		if a is an endpoint of your domain then lim f(x) does not exist but one of the two one sided limits will exist and be equal to f(a)
+		lim x<sup><small>3-2x</small></sup>2+5 x-&gt;3	3<sup><small>2-2(3)</small></sup>2+5=14 is x=3 an endpoint of the domain? Domain: |R limit x-&gt;3 of  =14
+			find lim sqrt(x-4) x-&gt;4 find f(4) = sqrt0 =0 is x=4 an endpoint? even root: x-4&gt;=0 x&gt;=4 -&gt; [4,inf)yes it is an endpoint therefore the limit of x-&gt;4 of sqrt(x-4) doesn't exit but x-&gt;4^+ sqrt(x-4) = 0
+			find lim12 x-&gt;-5 find f(-5) =12  Domain |R therefore lim12=12 x-&gt;-5
+
+</ol>
+			
+<ol>
+<li>
+If evalutating f(a) results in a non-zero number divided by zero, then you have found a vertical asymptote of your function: a vertical line x=a that the
+	   graph of f(x) gets closer and closer to but never touches this leaves three possibilites:
+	   	limf(x)=inf x-&gt;a or limf(x)=-inf x-&gt;a or lim f(x) does not exist x-&gt;a
+		goes up			goes down			goes up and down diagnolly so quad one and 3 or 2 and 4 asymptote
+
+</ol>
+		
+<p>
+		to figure out which of these is true, we pick a couple of inputs just bigger than and just smaller than a and look at the corresponding outputs
+</p>
+		
+<p>
+		EG find lim(1/(x-3)) x-&gt;3 f(3)=1/(3-3) = 1/0 SO x=3 is a vertical asymptote for this function.
+		plus m, e.g, x=3.01 and x=2.99
+		f(3.01)=1/(3.01-3)=100 x-&gt;3^+ 1/(x-3) = inf
+		lim 1/(x-3)^- = -inf so lim 1/(x-3) x-&gt;3
+</p>
+
+</body>
+</html>

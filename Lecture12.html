@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Lecture12</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+Definition: The derivative of a function f at x is
+f^1(x)=lim h-&gt;0 (f(x+h)-f(x))/h
+leibniz notation
+f^1(x)=dy/dx = d/(dx)(f(x))
+</p>
+
+<p>
+^1 should be to the power of prime
+the derivative is a formula for finding the instantaneous rate of change of a function at any point AND the derivative is a formula for finding the slope of the tangent line to the graph of the function at any point
+</p>
+
+<p>
+The math operation of computing a derivative is called differentiation.
+</p>
+
+<p>
+eg find f^1(x) if f(x) = lim h-&gt;0	f(x+h) - f9x)  / h
+		f(x+h) = -6(x+h)+11
+			= -6x -6h +11
+			lim h-&gt;0 f(x+h) - f(x)  /  h 
+			= -6x-6h+11-(-6x+11)    /  h
+			= lim h-&gt;0 	-6x-6h+11+6x-11	 /   h
+			= lim h-&gt;0  -6
+eg y^^ = lim h-&gt;0 f(x+h) - f(x)   /   h
+		f(x+h)=3/(x+h+2)
+		lim h-&gt;0   3/(x+h+2) - 3/(x+h+2)   /    h
+		= lim h-&gt;0 (3(x+2)-3(x+h+2))/(x+h+2) * (x+2)#donotfoil   /  h/1 
+		= lim h-&gt;0  -3h / (x+h+2)(x+2) / h/1
+		= lim h-&gt;0  -3h / (x+h+2)(x+2) / 1/h
+		=-3 / (x+2)(x+2) = -3/(x+2)^2
+</p>
+		
+<p>
+if f^^(x) is pos at x=a then graph is increasing there
+if f^^(x) is neg at x=a then graph decreasing
+if f^^(x) is zero at x=a then the graph is flat
+</p>
+
+<p>
+MIDTERM 1 STOPs here
+</p>
+
+<p>
+2.3 Basic Differentiation formulas
+From this point on, almost every question in this class wil require you to calculate the derivative of a function
+When calculating derivatives it would be a major pain to have to use the limit def every time thankfully there are several shortcut rules that we can use
+</p>
+
+<p>
+rule 1 constant rule let c E R then (c)^<sup><small> = 0 	d/dx(c)=0	if f(x)=c then f</small></sup>^x =0 if y =c then dy/dx = 0
+the derivative of a constant function is zero (all equivalent)
+</p>
+
+<p>
+rule 2 power rule
+let n be any constant real number then (x<sup><small>n)</small></sup><sup><small> = nx</small></sup>(n-1)
+bring the exponent down front and subtract 1
+</p>
+
+<p>
+eg y^<sup><small> if y=x</small></sup>2 power rule 	y^<sup><small>=2x</small></sup>(2-1) = 2x
+	y=x<sup><small>3 y</small></sup><sup><small>= 3x</small></sup>(3-1)=3x^2
+	y=x<sup><small>(sqrt7) y</small></sup><sup><small> = sqrt7 x</small></sup>(sqrt7 - 1)
+	y=1/(sqrtx) = 1/x<sup><small>(1/2)=x</small></sup>(-1/2) y^<sup><small> = -1/2x</small></sup>(-3/2)  = -1/2 * 1/x<sup><small>(3/2)= -1/(2(sqrt(x</small></sup>3)))
+</p>
+	
+<p>
+	y^<sup><small> if y=pi</small></sup>2 	y^^ =0 CONSTANT = pi
+</p>
+	
+<p>
+	if(f(x)=x<sup><small>1000 then find lim h-&gt;0	f(x+h)-f(x)  /  h = lim h-&gt;0  DON NOT FOIL is = f</small></sup><sup><small>(x) = 1000x</small></sup>999
+</p>
+	
+<p>
+rule 2a single variable rule	(x)^<sup><small> = 1 if f(x) =x then f</small></sup><sup><small> (x) =1 	special case of power rule, Note these derivative rules also hold for variables other than x -- if f(z) =z then f</small></sup>^(z)
+= 1 if g(t) = t<sup><small>4 then g</small></sup><sup><small>(t) = 4t</small></sup>3
+f^^(x) = lim h-&gt;0 f(x+h) -f(x)   /h
+f(x+h) = x+h
+=lim h-&gt;0 1		Q.E.D.
+</p>
+
+
+
+<p>
+Rule 3: constant multiple rule
+if cE R is some constant and f(x) is a differentiable function then [c*f(x)\^<sup><small>=c*f</small></sup>^(x)
+</p>
+
+<p>
+Rule 4: Sum/Difference rule
+if f(x) and g(x) are differentiable functions then 
+[f(x)+g(x)\^<sup><small>=f</small></sup><sup><small>(x)+g</small></sup>^(x)
+[f(x)-g(x)]^<sup><small>= f</small></sup><sup><small>(x)-g</small></sup>^(x)
+</p>
+
+<p>
+eg find y^<sup><small> if:		a) y=3x</small></sup>2	y^<sup><small> = 3*(x</small></sup>2)^<sup><small> =3 * 2x(</small></sup>2-1 =3*2x=6x
+</p>
+<ol>
+<li>
+f(x)=4x	f^<sup><small>(x)= 4x</small></sup><sup><small>=4*x</small></sup>^ = 4
+
+<li>
+y=x<sup><small>2+x	y</small></sup><sup><small>=(x</small></sup>2+x)=(x<sup><small>2)</small></sup><sup><small>+x</small></sup><sup><small>=2x</small></sup>(2-1)+1 =2x+1
+
+<li>
+differentiate f(x) =8x<sup><small>5+2 		f</small></sup><sup><small>x =(8x</small></sup>5+2)^<sup><small> = 8(x</small></sup>5)^<sup><small>+0 = 8*5x</small></sup>4=40x^4
+
+<li>
+f(x)=1/(x<sup><small>4) 	we don't have a division rule! (yet) f(x)=x</small></sup>(-4) f^<sup><small>(x) = -4x</small></sup>(-4-1)=-4x<sup><small>-5 = -4/x(</small></sup>5) 
+
+<li>
+y=pix<sup><small>2+17x</small></sup>100+1/2x<sup><small>3+(</small></sup>3 sqrt2)	y^<sup><small>=2pix+1700x</small></sup>99+3/2*x^2+0
+
+<li>
+alt notation f(x) = 4sqrtx +3x<sup><small>(3/2) find f</small></sup><sup><small>(4) (find f</small></sup>^(x) then find x=4)		find dy/dx | x=4
+				f(x)=4x<sup><small>1/2 + 3x</small></sup>3/2)		f^<sup><small>(x)=4*1/2x</small></sup>(1/2-1) +3/1 *3/2 x
+				=4/2x<sup><small>(-1/2) +9/2x</small></sup>(1/2) = 2x<sup><small>(-1/2)+9/2x</small></sup>(1/2)
+
+<ol>
+<li>
+f^<sup><small>(4)=2(4)</small></sup>(-1/2) +9/2(4)^(1/2) = 10
+
+</ol>
+</ol>
+
+</body>
+</html>

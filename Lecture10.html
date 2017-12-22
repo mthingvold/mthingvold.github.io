@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Lecture10</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+
+<p>
+Limits, continued
+infinite limits and horizontal asymptotes
+continuity
+try calculating f(a)
+</p>
+<ol>
+<li>
+if evaluating f(a) results in zero over zero then you must try to simplify your function, then repeat this procedure from the beinning. Try factoring the top and bottom if possible and see if you can cancel. If you have multiple layers of fractions you may have to finnd a common denominator on the top and/or bottom then reciprocate and multiply. if you have square roots in the numerator or denominator you may have to multiply the top and bottom by the conjugate
+
+</ol>
+
+<p>
+	eg find lim(x^2-4)/(x+2) x-&gt;-2 f(-2) = 4-4 / -2+2 = 0/0
+	= lim x-&gt; -2 is x+2 x-2 / x+2 = x-2
+	= lim x-&gt; -2 x-2 = -2 -2 = -4
+</p>
+
+<p>
+	x-&gt;1 lim 1/x - 1 // x-1 = 0/0 simplify
+	lim 1/x - 1 // x-1 = lim x-&gt;1 1-x/x // x-1/1 = (1-x)/x// (x-1)/1factor
+	lim x-&gt;1 -1 (x-1)/x * 1/(x-1)
+	lim x-&gt;1 -1/x we have cancelled so try evaluating again
+	-1 is final answer
+</p>
+	
+<p>
+	find x-&gt;9 lim sqrtx -3 // x - 9
+	f(9)=sqrt9 -3 // 9-9 = 0/0 
+	multiply the top and bottom by the conjugate of the top
+	lim x-&gt;9 sqrtx -3 * sqrtx + 3 FOIL &amp;&amp; sqrtx-9 * sqrtx + 3 DO NOT FOIL
+	lim x-&gt; 9  x+3(sqrtx) -3(sqrtx) -9 // (x-9) * (sqrtx +3)
+	= lim x-&gt;9 1/((sqrtx) + 3) 1/sqrt9+3 = 1/6
+</p>
+	
+<p>
+Procedure to find the limit of a function lim f(x) x-&gt;a
+Try calculating f(a)
+</p>
+<ol>
+<li>
+if a is a transition point of a piecewise funciton then you have to calculate the left and righthand limits match then lim x-&gt;a f(x) = a
+	if the one sided limits do not match then x-&gt; a lim f(x) does not exist. In this case, there is a jump in the graph:
+	Find lim x-&gt;1 f(x) if f(x) = { x+2 if x&lt;=1 { -x if x&gt; 1
+	x=1 is the transition point so handle two one sided limits seperately
+	lim x-&gt; 1<sup><small>-1 f(x) = lim x-&gt;1</small></sup>- x+2 = 1+2 =3
+	lim x-&gt; 1<sup><small>+ f(x) = lim x-&gt;1</small></sup>+ -x =  3 != -1
+	therefore lim x-&gt;1 does not exist
+
+</ol>
+	
+<p>
+	Find lim f(x) x-&gt; -1 f(x) if f(x) = { x+2 if x&lt;=1 { -x if x&gt; 1
+	x=-1 is the transition point calculate the two one sided limites
+	lim x-&gt;=-1^- f(x) = lim x-&gt;-1 x+2 = -1 +2 = 1
+	lim x-&gt; -1<sup><small>+ f(x) = lim x-&gt; 1</small></sup>+ -x = 1 = 1 therefore limfx=1
+</p>
+	
+<p>
+	find lim x-&gt;2 x=2 is not a transition! (same function
+	lim f(x) = lim -x = -2 
+</p>
+	
+<p>
+Limits at infinity
+	lim f(x) x-&gt; inf asks "as x gets bigger does f(x) get closer and closer to some number L, or does it also get bigger? to find lim x-&gt; inf f(x) we could make a table of values using larger and larger x-values and see if a pattern emerges in the y values. Remember, infinity is not a real number, but rather a tendency towards endlessness. Def: if lim x-&gt; inf f(x) and/or lim x-&gt; -inf f(x) is some real number L, then we say f(x) has a horizontal asymptote at the line y=L
+	Note: unlike vertical asymptotes, a function may cross a horizontal asymptote.
+	find lim x-&gt; inf x^2 + 3x
+	x	f(x)=x^2+3x
+	10	130
+	100	10300
+	1000	1003000
+	therefore x-&gt; inf lim x^2 +3x = inf and x-&gt;-inf = inf
+</p>
+	
+<p>
+	lim x-&gt; inf 1/x^2
+	x	f(x)=1/x^2
+	10	.01	
+	100	0.0001
+	1000	0.000001
+	negative is same
+	lim x-&gt; -inf and inf 1/x^2=0
+</p>
+	
+<p>
+Shortcut to find the horizontal asymptotes of a rational function
+	f(x) = p(x)/q(x)
+</p>
+	
+<ol>
+<li>
+if the degree of q(x)&gt;degree of p(x) then there is a horizontal asymptote at y=0
+
+<li>
+if the degree of q(x) = degree of p(x) then there is a horizontal asymptote at y=a/b (where a is the coefficient of the highest powered term of p and b is the coefficient of the highest powered term of q)
+
+<li>
+if the degree of q(x) &lt; degree of p(x) you don't have a horizontal asymptote. (if you need to find the infinite limits, make a small table of values)
+
+</ol>
+
+<p>
+	EG find lim x-&gt; inf	(1+x)/(x^2+3x+7) degree 1 degree 2 y = 0 by case 1)
+	find horizontal asymptotes on same degree x<sup><small>2/45x</small></sup>2 +7 so the HA occurs at y=a/b 1/45
+	EG find y=4x<sup><small>3/(x</small></sup>2+9) == no Horizontal aasymptotes 
+	find lim( of prev functionn x-&gt; inf
+	f(10000)=399999 so lim= inf and -inf
+	if no division use an invisible 1 for no Horizontal asymptotes
+</p>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>GUI</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<div id="Frame Windows"><h3 id="Frame Windows">Frame Windows</h3></div>
+
+<p>
+	Java provides classes for creating ggraphical applications
+	they run on any os and that sounds disgusting
+</p>
+	
+<p>
+	Java's JFrame class allows you to display a fram
+	part of javax.swing
+</p>
+	
+	
+<ol>
+<li>
+Construct an object of the Jframe class
+		```
+		JFrame frame = new JFrame();
+		```
+
+<li>
+Set the size of the frame
+		frame.setSize(300,400);
+
+<li>
+Set the title of the frame
+		frame.setTitle("An empty frame");
+
+<li>
+Set the close operation
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+<li>
+Make it visible
+		frame.setVisible(true);
+
+</ol>
+		
+<p>
+	<span id="Frame Windows-Adding components"></span><strong id="Adding components">Adding components</strong>	
+		You cannot draw directly on a JFrame object
+		Instead construct an object and add it to the  Frame
+</p>
+<ul>
+<li>
+a few examples objects to add are
+
+<li>
+JComponent
+
+<li>
+JPanel
+
+<li>
+JTextComponent
+
+<li>
+JLabel
+	If you have more than one component, put them into a panel
+	First create components
+		JButton button = new JButton("Click me!");
+		JLabel label = new JLabel("Hello, World!");
+		JPanel panel = new JPanel();
+		//then add them to the panel
+		panel.add(button);
+		panel.add(label);
+		frame.add(panel);
+
+</ul>
+
+<div id="Using Inheritance to customize Frames"><h3 id="Using Inheritance to customize Frames">Using Inheritance to customize Frames</h3></div>
+<ul>
+<li>
+For complex frames:
+
+<ul>
+<li>
+Design a subclass of JFrame
+
+<li>
+Store the components as instance variables
+
+<li>
+initialize them in the constructor of your subclass.
+
+</ul>
+</ul>
+
+</body>
+</html>

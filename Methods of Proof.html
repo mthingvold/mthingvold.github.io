@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Methods of Proof</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<div id="methods of proofs"><h2 id="methods of proofs">methods of proofs</h2></div>
+<p>
+pg 179 q)47
+		prove a 4 digit number that adds up t 9 is div by 9
+</p>
+		
+<p>
+		proof:
+			Let X be a 4 digit number, let A,B,C be its digits such that the digits add up to 9 [Direct Proof]
+			Then we know a+b+c+d=9k, k is some arbitrary int
+			x=a*1000+b*100+c*10+d
+			=a(999+1)+b(99+1)+c(9+1)+d
+			999a+99b+9c+a+b+c+d
+			999a+99b+9c+9k
+			9(111a+11b+c+k)
+			therefore, x must be divisible by 9
+</p>
+	
+<p>
+	pg 190 q) 38
+		<span id="methods of proofs-Proof by cases"></span><strong id="Proof by cases">Proof by cases</strong>
+</p>
+		
+<p>
+		n^2+5 is not divisible by 4
+		proof:
+		2 cases
+			case 1: N is even
+</p>
+<blockquote>
+Then N = 2k where k is some int
+so (n<sup><small>2)+5=((2k)</small></sup>2)+5
+=4k^2+5
+=4k^2+4+1
+=4(k^2+1)+1
+Thus if n is even n^2+5 is not div by 4
+</blockquote>
+<p>
+			Case 2: n is odd
+</p>
+<blockquote>
+Then N = 2k+1 where k is some int
+n<sup><small>2+5=(2k+1)</small></sup>2+5
+=4k^2+4k+1+5
+=4k(k^2+k+1+2)
+thus, for all odd integers n, n^2+5 is not divisible by 4.
+Therefore for all integers n, n^2 + 5 is not divisible by 4; by proof by cases.
+</blockquote>
+				
+		
+<p>
+	pg 206 q) 27
+		<span id="methods of proofs-Proof by contradiction"></span><strong id="Proof by contradiction">Proof by contradiction</strong>
+			proof:
+</p>
+<blockquote>
+let m and n be 2 integers such that int m+n is even
+assume that one of m and n is even
+then m+n=(2j)+(2k+1) 
+m+n=2(j+k)+1
+thus m+n is odd if exactly one of m/n is even
+thiscontradicts the statement that m+n is even,
+therefore if m+n is even then either m or n must be even or neither must be
+</blockquote>
+				
+<p>
+	pg 206 q) 28
+		<span id="methods of proofs-proof by contraposition"></span><strong id="proof by contraposition">proof by contraposition</strong>
+		P(x)-&gt;Q(x)      ~Q(x)-&gt; ~P(x)
+</p>
+		
+<p>
+		we will show that if m and n are both odd, then m*n is odd.
+		let m=2j+1, n=2k+1, wherej and k are arbitrary integers
+		Then m*n=(2j+1)*(2k+1)
+			=4jk+2j+2k+1
+			=2(2jk+j+k)+1
+</p>
+			
+<p>
+		Thus, if m and n are both odd, m*n is odd.
+		Therefore by proof by contraposition we know that if m * n is even
+		then m is even or m is even
+</p>
+
+</body>
+</html>

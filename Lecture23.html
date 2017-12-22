@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Lecture23</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+Application #2:
+Maximizing area/enclosure
+eg A farmer has 600 feet of fence and wants to build an animal pen with three equal compartments for lions tigers and bees
+What is the largest area such an enclosure can contain
+</p>
+
+<p>
+A=3x*y
+600 =6x+4y
+isolate for y and sub into the a formula
+4y=600-6x
+y=(600-6x)/4
+A= 3x ((600-5x)/4) = 1800x-18x^2  /4
+a=1800/4x - (18/4)x<sup><small>2 = 450x-9/2x</small></sup>2= A^^=x=50
+this is the "location" NOTE
+</p>
+
+<p>
+y=600-6(50)  / 4 = 600-300/4 = 75 	put 50 into x
+</p>
+
+<p>
+ the dimensions are 50 by 75 feet
+</p>
+ 
+<p>
+ application #3: max volume
+Eg a sheet of metal is a square 8 inches long on each side. An open top box can be created from this sheet bycutting identical squares from each corner folding the flaps up and welding them together.
+what's the box of max volume that can be made in this way?
+</p>
+
+<p>
+find V find V^^
+</p>
+
+<p>
+V=l*w*h
+=(8-2x)(8-2x)*x
+V=x(8-2x)^2
+Note:Because x is a length, the smallest x can be is zero
+what is the biggest x can be?
+x=4 is the biggest
+</p>
+
+<p>
+So, find max for [0,4]
+-&gt; can use EVT
+v^<sup><small>=(x)</small></sup><sup><small> * (8-2x)</small></sup>2+x*[(8-2x)<sup><small>2]</small></sup>^
+=(8-2x)^2-4x(8-2x)= 0
+(8-2x)[(8-2x)-4x]=0
+(8-2x)(8-6x)=0
+8=2x  8=6x
+x=4   x=4/3
+V=x(8-2x)^2
+</p>
+
+<p>
+x	V
+0	0	
+4/3	1024/27 ABS MAX
+4	0
+		the absolute max vol of 1024/27 inches^3 is when we cut 4/3 of an inch squares for each corner.
+		MIDTERM 2 content stolp
+</p>
+		
+<p>
+3.4 Further app of optimization
+Maxing profit again
+sometimes the variable in our profit equation represents quantity
+Other times, it represents something else. We will have to adapt the formulas we learned before to acommodate these other scenarios
+For example, the variable could represent the number of price increases or decreases:
+If we increase the price of a good clearly p gets bigger. It is also likely that the quantity sold will get smaller.
+</p>
+
+<p>
+eg R=p*x
+p(n)*x(n)
+where n = number of price reductions
+the band <span id="-Derivative Nonsesne"></span><strong id="Derivative Nonsesne">Derivative Nonsesne</strong> is selling CDs at their concert. When disks cost 10\(, 60 people will buy them. For each \)1 decrease in price, 20 more people will buy a disk. Manufacturing costs are 3\( per CD and fixed cost of 100\)
+</p>
+
+<p>
+maximiz3e profti
+P-&gt; P^^=0
+R=p*x
+C=vx+k
+P=R-[C]
+let n= number of 1$ price reductions
+</p>
+
+<p>
+R=price per disk * number of disks sold
+</p>
+
+<p>
+  (10-1*n)*(60+20n)
+  C=3x+100 x is not our variable in this problem
+  R=(10-n)(60+20n)
+  R=600+200n-60n-20n^2
+   = 600+140n-20n^2
+  c=280+60n
+  P=R-[C]
+  P=600+140n-20^2 - [280+60n]
+  P=320+80n-20n^2
+  P^^=80-40n=0		-40n=-8	n=2
+  What price and what profit? The hand should charge 10-n=10-2=8$ per disk.
+  At this price profit=
+  P=320+80(8)-20(8)^2=-320$XXX put n=2 not n=8
+  p=320+80(2)-20(2)^2=400$ profit
+</p>
+
+</body>
+</html>

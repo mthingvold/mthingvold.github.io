@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Lecture11</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+CONTINUITY
+</p>
+
+<p>
+if you can draw graph without lifitng pencil
+</p>
+
+<p>
+Def: a function f(x) is continuous at x=a if:
+</p>
+<ol>
+<li>
+f(a) is defined
+
+<li>
+lim x-&gt;a f(x) exists and
+
+<li>
+lim x-&gt;a f(x) =f(a)
+
+</ol>
+
+<p>
+	eg is y=x^2 continouous at x=2?
+		f(2)=2^2=4 defined
+		lim x-&gt; 2 f(x) = lim x-&gt;2 x^2 = 4 limit exists
+		4= f(2)=lim f(x) = 4 so y=x^2 is continuous at x=2
+	eg is f(x)=sqrtx continuous at x=-3
+		1 f(-3)=sqrt(-3) undefined so, fx is not continues(discontinuosu at x=-3)
+	eg is f(x) = sqrt x continuous at x=0
+		1 f(0)=sqrt0 =0
+		lim x-&gt;0 sqrt x domain x&gt;= 0 [0,inf)
+		lim x-&gt;- sqrt x does not exist
+		but it is right continuous
+</p>
+		
+<p>
+		f(2)=2+2=4 limf(x) = lim x+2 = 2+2=4
+</p>
+		
+<p>
+	is f(x) = { x+2 if x&gt;=0 {-x if x&lt;0
+	1 f(0)=2
+	2 x=0 is a transition so do oneA sided limites
+	lim x-&gt;0<sup><small>- = lim x-&gt;0</small></sup>- -x = 0
+	lim x-&gt;0^+ =x+2 =2
+	0!= 2 so lim fx x-&gt;0 Does not exist DISCONTINUOus
+</p>
+	
+<p>
+	eg is f(x)={x+2 if x!=3 {1 if x=3
+		continuous at x=3
+		1 f(3) = 1
+		2 lim x-&gt; 3 f(x) = lim x+2=3+2=5
+		3 1!=5 so the function is discontinuous
+</p>
+		
+<p>
+Rates of change, slopes, and derivatives
+	eg suppose it takes you two hours to drive the 260 km from saskatoon to regina
+</p>
+<ol>
+<li>
+what was the avg speed 260/2 = 130km/h
+			avg speed = delta d /delta t = dsub2-dsub1 / t2-t1
+
+<li>
+what was the instantaneous speed at some particular time during the trip
+		 y=f(x) avg rate of change = delt y / delt x y2-y1 / x2-x1
+		 = f(x2) - f(x1) / x2-1
+
+</ol>
+		 
+<p>
+		 another formulation
+		 let x1=a and x2 =a+h = f(a+h) - f(a) /( h)
+		 eg what is avg rate of change of f(x) =x^3 from x =1 to x=3
+		 a=1 a+h =3 therefore h=2
+		 avg = f(ath)-f(a) / h = 3^3 -1 / 2 =26/2 = 13
+		 how can we find your instantaneous speed if your speedometer is broken
+		 approximate it by calculating avg speed over a sufficiently small time interval
+		 we can make the approximation as good as we like by making the time interval shorter and shorter that is closer to zero closer MEANS ZERO
+	DEF: a secant line crosses a curve at 2 points or more:
+	the slope of a sedcant line is avg rate of change
+	def a tangent line touches the curve at some point without crossing it
+	the slope is the instantaneous rate of change
+	eg Find the equaion of the tangent line to the function y=x^2+x when x=2
+	a=2, h is some tiny amount
+	slope of secant line from x=2 to x=2th
+	= f(x2) -f(x1) / x2-x1 = 2th<sup><small>2 +2th - 2</small></sup>2th / 2th - 2
+	= 4 +4h +h<sup><small>2 +2+h -6   /   h	=5h+h</small></sup>2 /h
+	to find the tangent line let h get close to zero
+	lim h-&gt;0 5h+h^2  /  h 0/0 factor and cancel = lim 5+h = 5+0 =5
+	m=5 x=2, y=? =f(2) = 2^2 +2 =6
+	y=mx+b -&gt; 6= 5(2)+b b=-4 	y=5x-4
+</p>
+
+</body>
+</html>

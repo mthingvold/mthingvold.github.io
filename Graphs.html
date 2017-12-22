@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Graphs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+A graph G consists of 	
+</p>
+<ul>
+<li>
+a set of vertices, V(G)
+
+<li>
+a set of edges E(G)
+	Each edge is associated with either one or two vertices called its endpoints. An edge connects its endpoints. A vertex is incident to an edge if the vertex is an endpoint of the edge. two vertices connected by an edge are adjacent
+
+</ul>
+	
+<p>
+	An edge with only one endpoint is a loop, and two or more edges with the same endpoints are said to be parallel.
+	Simple graph won't contain these
+</p>
+	
+<p>
+Handshake theorem:
+	The sum of the degrees of all the vertices of a graph G is equal to twice the number of edges in G.
+	Proof:
+		By induction on the number of edges in the graph = m
+		Basis case: m=0
+		In a graph with no edges, the sum of the degrees of all the vertices in the graph is zero, which is also twice the number
+</p>
+		
+
+<p>
+Next step proofs:
+</p>
+<ol>
+<li>
+Straight line proofs - from premises to a goal
+
+<li>
+Proof by contradiction - From negation of goal to negation of premise.
+
+<li>
+Deduction Theorem Proofs - using assumption and a goal to conclude assumption → goal
+
+<li>
+Proof by Cases - 2 or more alternatives leading to same outcome
+
+<li>
+Proof by induction - proving a countably infinite number of cases using a base case and deduction-theorem-like induction step.
+
+</ol>
+
+<p>
+The theorems were not typically important, but the theorem forms were.
+</p>
+
+<p>
+<span id="-Cycle"></span><strong id="Cycle">Cycle</strong>
+A cycle in a graph is a simple circuit that contains at least one edge.
+</p>
+
+<p>
+<span id="-Trees"></span><strong id="Trees">Trees</strong>
+A tree is a graph which is connected, but contains no cycle. A forest is a graph which contains no cycle.
+</p>
+
+<p>
+Theorem: If a tree T = (V,E) has n&gt;1 vertices, then T has at least 2 vertices of degree 1.
+</p>
+
+<p>
+Proof: By induction on n. 
+Basis Case: n=2 The only tree with two vertices consists of the two vertices connected by an edge.
+</p>
+
+<p>
+Inductive Hypothesis:
+Assume that all trees with at least 2, but at most k verses have at least 2 vertices of degree 1.
+</p>
+
+<p>
+Inductive step: consider a tree T with n=k+1 vertices. Let e = (u,v) be an edge in T.
+</p>
+
+<p>
+Proceed by cases:
+Case 1: Both u and v are of degree 1.  
+This case cannot occur as T has at least three vertices, and it could not be connected if two adjacent vertices were of degree one.
+Case 2: Exactly one of u or v are of degree 1.
+Assume u is of degree 1. Let Tv be the subtree of T
+</p>
+
+<p>
+Rooted trees
+A rooted tree is a tree with one vertex designated as the root of the tree
+The level of avertex u in  a rooted tree is the number of edges along the unique path between u and the root. 
+The height of a rooted tree is the maximum level of a vertex in the tree
+parent: for each vertex u, except the root, of a rooted tree the vertex adjacent to u, but at level one less than that of u is the parent of u.
+Child: for a vertex u in a rooted tree, the vertices adjacent to u but at level one greater than u are the children of u
+leaf: a vertex in a rooted tree with no children is called a leaf.
+</p>
+
+
+<p>
+Binary Trees:
+A binary tree is a rooted tree in which every parent has at most 2 children.
+</p>
+
+</body>
+</html>

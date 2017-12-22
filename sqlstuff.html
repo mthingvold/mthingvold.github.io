@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>sqlstuff</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+How to use mysql. SQL means Structured Query Language.
+</p>
+
+<p>
+Mysql is  a widely used shareware implementation.
+sign up at c9.io for access to implementation
+</p>
+
+<p>
+For this class, we have created a special implementation for each of you &lt;3
+</p>
+
+
+<p>
+The database consists of tables, tables consists of rows of individuals and columns of attributes
+columns have convenient name such as colour or password, one value per indiv.
+</p>
+
+<p>
+three operations in sql
+</p>
+
+
+<p>
+Data definition
+	Create database - create database dbname;
+	the setup in the lab doesn't allow db creation.
+	list current dbs - show databases;
+	Start using a db - use dbname //semicolon can be added
+</p>
+	
+<p>
+	Terminate the session - quit
+</p>
+	
+<p>
+	mysql&gt; create table EMPLOYEE
+	-&gt;	(emp_num int,
+	-&gt;	name varchar(15),
+	-&gt;	profession varchar(15),
+	-&gt;	primary key (emp_num)  );
+</p>
+	
+<p>
+	Query OK, 0 rows affected (0.06 sec)
+</p>
+	
+<p>
+	details of your table definition - describe tbname;
+</p>
+	
+<p>
+	MySQL [cmpt260_mat534]&gt; describe EMPLOYEE;
+	+------------+-------------+------+-----+---------+-------+
+<table class='center'>
+<tr>
+<td>
+Field
+</td>
+<td>
+Type
+</td>
+<td>
+Null
+</td>
+<td>
+Key
+</td>
+<td>
+Default
+</td>
+<td>
+Extra
+</td>
+</tr>
+</table>
+	+------------+-------------+------+-----+---------+-------+
+<table class='center'>
+<tr>
+<td>
+emp_num
+</td>
+<td>
+int(11)
+</td>
+<td>
+NO
+</td>
+<td>
+PRI
+</td>
+<td>
+0
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+name
+</td>
+<td>
+varchar(15)
+</td>
+<td>
+YES
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+NULL
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+profession
+</td>
+<td>
+varchar(15)
+</td>
+<td>
+YES
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+NULL
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+</table>
+	+------------+-------------+------+-----+---------+-------+
+	3 rows in set (0.00 sec)
+</p>
+
+<p>
+	insert into tbname values(value,...);
+</p>
+	
+<p>
+	For example:
+	-&gt; insert into EMPLOYEE values
+	-&gt;	(102,'Adams','Programmer');
+</p>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Lecture13</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+A strong convention/rule of thumb: it is almost always better/easier to simplify an expression before you take the derivative than after.
+</p>
+
+<p>
+Performing simplifications or algebraic manipulations may even be necessary to put a function into a form where the rules can apply!
+</p>
+
+<p>
+		eg differentiate y=(x^7) / (3) 		no fraction rule yet!	recall x/a=1/a * x
+</p>
+<blockquote>
+y=1/3 x^7
+y^<sup><small> = 1/3 * 7x</small></sup>(7-1) (constant multiple and power rules)
+y^<sup><small>=7/3x</small></sup>6
+</blockquote>
+<p>
+		diff 		 y=15/(2x^3)
+</p>
+<blockquote>
+y=15/2 * 1/x^3		use negative exponants
+y=15/2 *x^-3
+y^<sup><small>=15/2(-3x</small></sup>(-3-1)
+y^<sup><small>=-45/2x</small></sup>-4 = -45/2*1/x^4
+</blockquote>
+				 
+<p>
+		diff		 y=x^2+x   /   x+1 	can't split so find another way
+</p>
+<blockquote>
+y=x(x+1)/x+1 y=x (x!=-1)
+y^^=1 (x!=-1)
+</blockquote>
+				 
+<p>
+		diff		 eg find the equation of the tangent line to y=3x<sup><small>4 + x</small></sup>3 -2x^2 + 7 at x=-2
+</p>
+<ol>
+<li>
+equation of a line: y=mx+b
+
+<li>
+the slope of the tangent line is the derivative: m=f^^ (-2)
+				 y^<sup><small>=12x</small></sup>3+3x^2-4x+0
+				 f^<sup><small>(-2)=12(-2)</small></sup>3+3(-2)^2-4(-2)
+					=-96+12+8= -76
+				 y=-76x+b	x=-2, y=?
+				 y=f(-2)=3(-2)<sup><small>4+(-2)</small></sup>3-2(-2)^2+7
+				 y=39
+				 39=-76(-2)+b
+				 b=113
+
+</ol>
+				 
+				 
+
+<p>
+Def: marginal cost is the additional cost of producing one more item than the current level of production
+		marginal revenue and marginal profit are defined exactly analogously
+		if C(x) gives total cost of manufacturing x items, then the marg cost is given by:
+		MC(x) =C^^(x)
+</p>
+		
+<p>
+		C(x) = 15x^2-x+3
+		find marg cost function find and interpret when 100 cases produced
+</p>
+		
+		
+		
+		
+<p>
+2.4 Product and quotient rules
+	Rule 5: Product rule
+		if f(x) and g(x) are differentiable functions then
+		[f(x)*g(x)]^<sup><small> = f</small></sup><sup><small>(x) *g(x) + f(x) * g</small></sup><sup><small>(x)		note: [f*g]</small></sup><sup><small> != f</small></sup>^ * g**
+		short [f*g]^<sup><small> =f</small></sup><sup><small> * g + f * g</small></sup>^
+</p>
+		
+<p>
+			eg diff y=(3x+2)(x-2) lets use the product rule instead of foiling even though foiling is ezier)
+			y^<sup><small> = (3x+2)</small></sup><sup><small> * (x-2) + (3x+2) * (x-2)</small></sup>^
+</p>
+<blockquote>
+= (3(1)+9) * (x-2) + (3x+2) 
+= 6x-4
+</blockquote>
+			
+<p>
+			eg diff y=x<sup><small>2(x</small></sup>2+7)
+</p>
+<blockquote>
+y^<sup><small>=(x</small></sup>2)^<sup><small> * (x</small></sup>2+7) + (x<sup><small>2)(x</small></sup>2+ 7)^^
+=2x(x<sup><small>2+7) + x</small></sup>2(2x)
+=4x^3+14
+easier to just do y=x<sup><small>4 +7x</small></sup>2 y^<sup><small> =4x</small></sup>3+14x
+</blockquote>
+<p>
+	Rule 5a: Multiple product rule
+		if f(x),g(x) and h(x) are differentiable functions then [f(x) * g(x) * h(x)]^^ =
+		f^<sup><small>(x) * (g(x)*h(x)) +f(x) *(g(x)*h(x)</small></sup>^
+		= f^<sup><small>(x)*g(x)*h(x) + f(x) * [g</small></sup><sup><small>(x)*h(x)+g(x)*h</small></sup>^(x)]
+		= f^<sup><small>(x)*g(x)*h(x)+f(x)*g</small></sup><sup><small>(x)*h(x)+f(x)*g(x)*h</small></sup>^(x)
+</p>
+		
+<p>
+		eg diff y=3x(x^2+4)(sqrtx -5) &lt;- root change to frac exponent
+			y=3x(x<sup><small>2+4)(x</small></sup>(1/2)-5)
+</p>
+<blockquote>
+f   g         h
+</blockquote>
+<p>
+			multiple product rule
+			3x^<sup><small> (x</small></sup>2+4)(x^(1/2)-5)
+			+ 
+			3x (x<sup><small>2+4)</small></sup><sup><small>(x</small></sup>(1/2)-5)
+			3x (x<sup><small>2+4)(x</small></sup>(1/2)-5)^^
+</p>
+			
+<p>
+			=3(x<sup><small>2+4)(x(1/2)-5)+3x(2x)(x</small></sup>(1/2)-5)+3x(x<sup><small>2+4)(1/2x</small></sup>-1/2 )
+			= 3/2x<sup><small>(1/2) (x</small></sup>2+4)
+</p>
+			
+<p>
+	Rue 6 Quotient rule
+		if f(x) and g(x) are diff functions then [f(x)/g(x)]^<sup><small> = f</small></sup><sup><small>(x)g(x) - [f(x)g</small></sup><sup><small>(x)]/[g(x)</small></sup>2] short [f/g]^<sup><small> = f</small></sup><sup><small>g-[fg</small></sup><sup><small>]/g</small></sup>2
+</p>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Functions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+
+<ol>
+<li>
+logical
+	There are two kinds of infinity, big deal but it doesn't matter if the universe is counatbly infinite
+
+</ol>
+	
+	
+<p>
+	Godel's incompleteness theorem states all languages rich enough to reason mathematics contain true statements that are unprovable
+	Everything that is true (in the sense of a truth table) can be proven (in the sense of a proof) and vice versa.
+	same is true of predicate calculus with quantifiers, but add arithmetic to the mix.
+	It becomes possible to use the arithmetic to imitate what a proof looks like.
+	The proofs we ahve so far are finite
+	The set of proofs is countable.
+</p>
+	
+<p>
+	Can you name "the smallest positive integer not definable in under eleven words". the problem is self-referentiality
+</p>
+	
+<ol>
+<li>
+Computing
+	Building an infinite loop detector
+	Let P be the set of all programs, and D be the set of all inputs. Note that P is a subset of D.
+	It is easy to write a C program that goes into an infinite loop all by itself:
+	void main()
+	{
+		while(true);
+	}
+
+</ol>
+	
+<p>
+	useful programs read data. So we might have the following (this is not actual C anymore)
+	void main()
+	{
+		char *data = readFile("file.txt");
+		if (data == "loop")
+			while (true);
+	}
+</p>
+	
+<p>
+	This is an ornery program
+</p>
+	
+<p>
+	The infinite loop detector has to read two pieces of input - a program, and its data. write a function
+		bool halts (char* program, char *data);
+	then we can write this program and store it in infiniteloopdetector.c
+</p>
+	
+<p>
+		void main()
+		{
+			if (!halts("ild.c","ild.c"))
+</p>
+<blockquote>
+exit(0);
+</blockquote>
+<p>
+			else
+</p>
+<blockquote>
+while(true);
+</blockquote>
+<p>
+		}
+</p>
+		
+<p>
+		halts when it goes into an infi loop and goes into an infi loop when it halts
+</p>
+		
+<ol>
+<li>
+Philosophy, Artificial Intelligence, Cognitive Science
+	Interesting that we humans can find infinite loops, but the process provably cannot be automated.
+
+</ol>
+
+</body>
+</html>

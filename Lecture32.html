@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Lecture32</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+AD 2x<sup><small>3-ex</small></sup>2 +x -sqrt5 dx =
+1/2x<sup><small>(3+1)-e(1/(2+1))x</small></sup>(2+1)+1/1+1x^(1+1)
+11/2x<sup><small>4-e/3x</small></sup>3+1/2x^2-sqrt5 x + C
+</p>
+
+<p>
+AD4/5x^3dx
+we don't have an integ quotient rule!
+=AD 4/5 * 1/x<sup><small>3 dx = 4/5 AD x</small></sup>-3 dx
+=4/5*1/(-2)*x^(-3+1)+C
+=-2/5x^-2 +C
+</p>
+
+<p>
+=6Adx<sup><small>(1/2)dx+2 AD x</small></sup>(-1/2)dx
+=6*(1/(1/2+1))x<sup><small>(1/2+1) + 2* 1/(-1/2+1) x</small></sup>(-1/2+1) +C
+=6*2/3x<sup><small>(3/2) +2*2x</small></sup>1/2+C
+</p>
+
+<p>
+find C(x)=AD MCdx = AD C^^(x)dx
+</p>
+<ol>
+<li>
+when x=0 C()= fixed cost to solve constant of integration 
+
+</ol>
+   
+<p>
+eg a company marginal cost function is MC = 21x<sup><small>(4/3) -6x</small></sup>(1/2)+50
+where x is the number of units, and fixed costs are 3000$. Find the cost function
+</p>
+<ol>
+<li>
+C(x) AD 21x<sup><small>(4/3) -6x</small></sup>(1/2)+50 dx
+
+<li>
+  =21*1/(7/3) x<sup><small>7/3 - 6 *2/3x</small></sup>3/2 +50x+C
+            =9x<sup><small>7/3 -4x</small></sup>3/2 +50x + C
+	    when x=0, C(0) = 3000
+	    3000 = 0<sup><small>2/3 - 0</small></sup>3/2 + 0 + C
+	    C= 3000
+	    *<span id="-C(x) = 9x<sup><small>7&#47;3 -4x</small></sup>3&#47;2 +50x + 3000"></span><strong id="C(x) = 9x<sup><small>7&#47;3 -4x</small></sup>3&#47;2 +50x + 3000">C(x) = 9x<sup><small>7/3 -4x</small></sup>3/2 +50x + 3000</strong>*
+
+</ol>
+	    
+	    
+<p>
+A rocket can accelerate to a speed of v(t)=-0.15t^2+14t feet/second find distance will travel in t seconds
+find pos/d function s(t)
+we know s^^(t) = v(t)
+-&gt; s(t) = AD v(t) dt
+init value =0
+</p>
+
+<p>
+=-0.15 1/3t<sup><small>3 +14*1/2t</small></sup>2 + C
+=-0.05t<sup><small>3+7t</small></sup>2+C
+when t=0, s=0
+0=C
+s(t)= -0.05t<sup><small>3+7t</small></sup>2
+</p>
+
+<p>
+5.2
+</p>
+
+<p>
+integ exp rule
+e<sup><small>(ax) dx = 1/a e</small></sup>(ax)+C
+</p>
+<ol>
+<li>
+integ log rule  
+   AD 1/x dx = ln \x\ +C
+   also ad x^-1 dx = ln|x|+C
+   why abs value?
+
+</ol>
+   
+<p>
+   any nvalue in the domain of the integrated function must be in the domain of the resulatant function
+   the domain of f(x) = 1/x is (-inf,0) U (0,inf)
+   the domain of f(x) =lnx is 0,inf
+   however the domain of f(x) = ln|x| is -inf,0 U 0,inf 
+</p>
+   
+<p>
+   find AD e^(sqrt3x  dx
+   1/sqrt3 e^(sqrt3x) +c
+   find AD pie^(-x) dx
+   =pi AD e^-x dx
+   pi * 1/-1e^-x + C
+   -pi(e)^-x +C
+</p>
+   
+<p>
+   Find AD 5/x dx
+   Recall AD 1/x dx = ln |x| + C
+   AD 5/x = AD 5* 1/x
+   = 5 Ad 1/x dx
+   = 5*ln|x| + C
+</p>
+  
+<p>
+  POWER RULE DOESNT APPLY
+</p>
+  
+<p>
+  eg find AD e<sup><small>x(e</small></sup>2x + 4) dx
+  no integ product rule!
+  Distribute!
+  AD e<sup><small>x e</small></sup>2x +4e^x dx
+  1/3e<sup><small>3x + 4e</small></sup>x+C
+  1/3e<sup><small>3x+4e</small></sup>x+C
+</p>
+  
+<p>
+  differentiate f(x) = e^6x + 1/x
+  AD e^6x +1/x dx
+  =1/6e^6x = ln|x| +C XXXXXXXXXXXXXXXXXXXXXXXX
+  f^<sup><small>(x) = 6e</small></sup>6x - 1/x^2
+</p>
+  
+<p>
+  what is AD ln x dx
+  (?)^^=ln(x)
+  we do not have a formula for this
+  eg find AD (x<sup><small>3_x</small></sup>2_1)/2x^2 dx
+  split into 4 fractions
+  = AD x<sup><small>3/2x</small></sup>2dx + ADx<sup><small>2x/2x</small></sup>2 - AD x/2x<sup><small>2dx +1./2x</small></sup>2 dx
+  = AD x/2 + AD 1/2dx - AD 1/2xdx + 1/2x^2dx
+  = take out 1/2
+  =1/2*1/2x^2+1/2*x-1/2*ln|x|
+  =1/4x<sup><small>2+1/2x-1/2ln|x|-1/2x</small></sup>-1+C
+</p>
+
+</body>
+</html>

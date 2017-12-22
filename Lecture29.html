@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Lecture29</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+eg simplify inn 25 - ln 5 eg simpliify ln(x/e)+1 
+law2 ln(x)-ln(e)+1
+	ln(x)-1+1
+	= ln(x)
+</p>
+	
+<p>
+eg break up into four log terms
+ln((x<sup><small>3-x</small></sup>2)/((x+1)(x-3)))
+ln(x<sup><small>3-x</small></sup>2)-ln[(x+1)(x-3)]
+ln[x^2(x-1)]-ln[(x+1)(x-3)]
+law1 ln(x^2)+ ln(x-1) -[ln(x+1)+ln(x-3)]
+</p>
+
+<p>
+eg write as a single log and simplify 
+ln(x-2)+2ln(x^3+2) - 3ln(2-x)
+law = ln(x-2)+ln(x<sup><small>3+2)</small></sup>2 -ln(2-x)^3
+law1 ln[(x-2)(x<sup><small>3+2)</small></sup>2] - ln(2x)^3
+law2 = ln[((x-2)(x<sup><small>3+2)</small></sup>2)/(2-x)^3]
+=ln[-1((-x+2)(x<sup><small>3+2)</small></sup>2)/(2-x)^2]
+=ln[-1(x<sup><small>3+2)</small></sup>2 / (2-x)^2
+</p>
+
+<p>
+two new operations we can use when solving equations:
+</p>
+
+<ol>
+<li>
+we can take the nat log of both sides of an equation 
+   eg x=3
+   ln(x) = ln(3)
+   x+y=5
+   ln(x+y)=ln(5)
+
+</ol>
+   
+<ol>
+<li>
+We can exponentiate both sides of an equation with base e 
+   e.g. x=3
+   e<sup><small>x=e</small></sup>3
+
+</ol>
+   
+<p>
+eg solve 2^x=7
+Take ln of both sides
+ln(2^x)=ln(7)
+law 3 xln(2)=ln(7)
+x=ln7/ln2
+</p>
+
+<p>
+eg solve 3^(x-1) =2
+ln(3^(x-1) =ln(2)
+(x-1)ln(3)=ln(2)
+x-1=ln2/ln3
+x=ln2/ln3+1
+</p>
+
+<p>
+solve 2e<sup><small>x</small></sup>2 -7=0
+e<sup><small>x</small></sup>2=7/2
+x^2*ln(e)=ln(7/2)
+x^2=ln(7/2)
+x=+-sqrt(ln(7/2))
+</p>
+
+<p>
+e.g. Solve ln(x)=4
+x=e^4
+</p>
+
+<p>
+Compund interest again
+Logarithms provide the tool we need to solve for t in a compound interest question where F,P,r and m are given.
+</p>
+
+<p>
+The most usual type of problem here asks for the doubling time( or tripling time or quad time, etc.) of an investment. 
+</p>
+
+<p>
+Fact: Given the same rate and compounding, it takes the same amount of time for any principal to double in size.
+</p>
+
+<p>
+eg what is the doubling time of an investment at 7% interest compounded monthly
+</p>
+
+<p>
+r=0.07
+m=12
+P=P
+F=2P or let p=1
+t=?
+</p>
+
+<p>
+2P=P(1+0.07/12)<sup><small>12t 2= (1+0.07/12)</small></sup>12t
+ln2=12t*(1+0.07/12)
+ln2/12ln(1+0.07/12)t=9.93 years
+</p>
+
+<p>
+e.g How long will it take an investment at 5% compounded continuously to increase in value by 30%?
+</p>
+
+<p>
+1.3=1*e^0.05t 
+ln(1.3)=0.05tlne
+ln(1.3) 0.05te
+t=ln(1.3/0.05
+t=5.247 years
+</p>
+
+<p>
+EG the value of a snowmobiel depreeciates at a rate of 12% per year when will it be worth one third of it's original price?
+</p>
+
+<p>
+1/3=1*e^-0.12t
+ln(1/3)=ln(e^0.12t)
+ln1/3/-0.12=t
+t=8.594 yeares
+</p>
+
+<p>
+Carbon-14 dating
+All organisms contain trace amounts of radioactive carbon.
+This amount stays relatively constant while the org is alive, but diminishes slowly after the org demise through rad decay.
+</p>
+
+<p>
+Because scientists know the rate c-14 decayds and the levels present in living organisms.. They can measure the amount of rad carbon and calc how old it is.
+</p>
+
+<p>
+Formula: Let P(t) after the prop of C-14 remaining after t years
+Then P(t)=e^(-0.00012t)
+rad decay works the same as dep of value.
+</p>
+
+<p>
+e.g. you find a battle axe with a wooden handle that contains 90% of its original c-14 how old is it?
+P=0/9
+0.9=e^-0.00012t
+ln(0.9)=-0.00012t
+t=ln(0.9)/-0.00012
+878 years old
+</p>
+
+<p>
+read over real world exp probs found at end of section 4.2 HAHAHHAHAHAHAHAHAHAHAHAHAHAHAHHAHAHAHAHAHHAHAHAH he actually expects us to reead the textbook the absolute madman lmao
+</p>
+
+<p>
+4.3 deriv of exponential and log functions
+two new derivative rules to add to your list
+Exponential Rule:
+(e<sup><small>x)</small></sup><sup><small>=e</small></sup>x
+</p>
+
+<p>
+note that you must NOT use the power rule to take the derivative of the exp function y=e^x:
+e<sup><small>x</small></sup><sup><small> != xe</small></sup>(x-1)
+</p>
+
+<p>
+Log rule:
+ln(x)^^=1/x
+</p>
+
+<p>
+These two new rules work in combo with all othere rules product rule etc
+</p>
+
+</body>
+</html>

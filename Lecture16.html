@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Lecture16</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+2.5 Higher order derivatives
+	We now know that the differentiation is an operation that takes a function as an input and gives another function as an output.
+	this means that once we have differentiated once, we could differentiate again: that is take the derivative of a derivative function
+	we can in theory find f^^^^^^^^^^(x)
+	f<sup><small>(5)(x)=f(</small></sup>^^^^)
+</p>
+	
+<p>
+	Leibniz notation:
+	f^^(x) = d/dx (f(x)) = dy/dx
+	f<sup><small>(2)(x)= d/dx( d/dx(f(x))) = d</small></sup>2 y  / dx^2
+	find the first six derivatives
+	y=x<sup><small>4 + 10x</small></sup>3 - sqrt(7)x^2 +2x +9
+	y^<sup><small>=4x</small></sup>3+3x^2 - 2sqrt(7)x +2 + 0
+	y<sup><small>(2)=12x</small></sup>2 +60x -2sqrt(7) +0
+	y^(3)=24x+60
+	y^(4)=24
+	y^5)=0
+	y^(6)=0
+</p>
+	
+<p>
+	e.g. Find f<sup><small>(2)(x) if f(x) =(x</small></sup>3-7x)/x^2
+	f^<sup><small>x=((x</small></sup>3-7x)^<sup><small>*x</small></sup>2-(x<sup><small>3-7x)(x</small></sup>2)^<sup><small>)/(x</small></sup>3)^2
+	=x<sup><small>4+7x</small></sup>2 / x<sup><small>4 = (x</small></sup>2+7)/x^2
+	f<sup><small>(2)x=2x*x</small></sup>2 - (x<sup><small>2+7) *2x  / x</small></sup>4
+	=-14x/x^4
+	<span id="-Better way is simplify first"></span><strong id="Better way is simplify first">Better way is simplify first</strong>
+	f(x)=x<sup><small>3/x</small></sup>3  - 7x/x<sup><small>2 = x-7/x = x-7x</small></sup>-1
+	No quotient rule
+	f^<sup><small>(x) = 1-7(-1x</small></sup>(-1-1) = 1 + 7x^-2
+	f<sup><small>(2)(x)=0+7(-2x</small></sup>-3) = -14x<sup><small>-3 = -14/x</small></sup>-3
+	suppose that f(x) is a distance function for some object
+	then, we saw f^^(x) is the instantaneous change in distance with respect to time - the velocity
+	f^(3)(x) is the acceleration fo an object - the change in the change in the distance
+	f^(4) is the jerk of the object
+	f^<sup><small>(x) is instantaneous change in f(x) f</small></sup>(2) is instant changein f^^(x)
+	eg if a ballbearing is dropped from a tall tower, the distance it falls after t seconds is given by s(t) = 4.9t^2 m (neglecting air resistance)
+</p>
+	
+<p>
+	what is the distance the ballbearing has fallen after 1 sec? 2 sec? 10 sec?
+	5(1)=4.9(1)^2 = 4.9 m
+	5(2) = 19,6m
+	s(10) = 490m
+	what is the velocity at thost times 
+	s^<sup><small>t=4.9t</small></sup>2 =9.8t (m/s)
+	v(1)=9.8(1)
+	v(2)=9.8(2)
+	v(10)=9.8(10)=98m/s
+</p>
+	
+<p>
+	accelertation
+	a(t)=v^<sup><small>(t)=s</small></sup>^(t)
+	=(9.8t)^<sup><small> = 9.8, m/s /s = 9.8m/s</small></sup>2
+	all equal 9.8 m/s^2
+	when acceleration is constant jerk is 0
+</p>
+	
+<p>
+2.6 THE CHAIN RULE -- mater take the chains off
+	eg Find the derivative of
+		y=(3x-2)^2
+</p>
+<ol>
+<li>
+expand (foil)
+
+<li>
+y=9x^2-12+4
+	   y^^ =18x -12
+
+<li>
+product rule
+	  y=(3x-2) (3x-2)
+	  y^^ = too fucken hard nvm im not writing this shit out just foil
+
+</ol>
+	  
+<p>
+	  y=(3x-2)^100 we really don't want to expand this
+	  we want a general differentiation rule for handling compositions of funcitons!
+	  [f(g(x))]^<sup><small> = f</small></sup><sup><small>(g(x)) * g</small></sup>^(x)
+	  7a [(g(x))<sup><small>n]</small></sup><sup><small> = n(g(x))</small></sup>(n-1) * g^^(x)
+	  diff y= ? ^100
+	  f=(?)^100
+	  y^<sup><small>=100(???)</small></sup>99(???)^^
+	  y^<sup><small>=100(3x-2)</small></sup>99*(3x-2)^^
+	  =300(3x-2)^99
+</p>
+	  
+<p>
+	  note: (f(g[x]))^<sup><small> != f</small></sup><sup><small>(g</small></sup>^[x])
+</p>
+	  
+<p>
+	  eg find y^<sup><small> if y=sqrt(x</small></sup>2+4)
+</p>
+<blockquote>
+=sqrt(x^2) + sqrt(4)
+y=(x<sup><small>2+4)</small></sup>(1/2)
+y^<sup><small>= 1/2(x</small></sup>2+4)<sup><small>(-1/2) *(x</small></sup>2+4)^^
+= (x<sup><small>2+4)</small></sup>(-1/2)
+</blockquote>
+<p>
+			i
+</p>
+	
+<p>
+	  find the derivative of f(x) = ^4sqrt(-x)
+	  domain: -x &gt;=0 -&gt; x &lt;=0 (-inf,0]
+	  f(x) = <sup><small>4sqrt(-x) = (-x)</small></sup>(1/4)
+	  f^<sup><small>(x) = 1/4(-x) </small></sup>1/4-1 4/4  * (-x)^^
+	  = -1/4(-x) ^(-3/4)
+	  it might be a good idea to start thinking of all derivative problems as requiring the chain rule:
+	  eg find h^<sup><small> (x) if h(x) =3x</small></sup>7
+	  h(x) =3(x)^7
+	  h^<sup><small>(x) =21(x)</small></sup>6 * (x)^^
+	  =21(x)^6 * 1
+	  = 21x^6
+</p>
+
+</body>
+</html>
