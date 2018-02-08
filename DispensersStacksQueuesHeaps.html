@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>DispensersStacksQueuesHeaps</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+<span id="-Dispensers"></span><strong id="Dispensers">Dispensers</strong>
+A dispenser is an ADT that is a collection of data that has current item
+The current item is always determined by data structure and cannot be changed by the user:
+	e.g.
+		Stacks
+		Queues
+		Heaps
+</p>
+		
+<p>
+Heaps are a special type of binary tree which are well suited to the arrayed tree implementation
+</p>
+
+<p>
+Stacks and queues are considered dispensers because they each have a "current item" (first and last respectively)
+</p>
+
+<p>
+A heap is considered a dispenser because the current item is always in the root node of the heap.
+</p>
+
+<p>
+in all cases current item is determined by data structure and not by the user. usuing pop,push,enqueue will change the cursors but it's through the implementation.
+</p>
+
+<ul>
+<li>
+dispenser is collection
+
+<li>
+dispenser has current item determined by dispenser
+
+<li>
+Current item cannot be changed by user(arbitrarily)
+
+<li>
+Current item can only be modified by dispenser operation
+
+</ul>
+
+<div id="Heaps"><h3 id="Heaps">Heaps</h3></div>
+
+<p>
+A heap has the heap property:
+	the item stored at a node must be at least as large as any of its descendents (if any).
+</p>
+	
+<p>
+	In a heap when an item is removed it's always the largest(root) that gets removed
+	Only Item that is allowed to be inspected is the top of the heap.
+</p>
+	
+	
+<p>
+Heaps have two esential operations
+	insert() - adds an item to the heap
+	delete() - remove the item from the top of the heap
+</p>
+	
+<p>
+Neither operation is trivial. inserting involves holding true to heap property, deleting involves rearranging  the remaining items
+</p>
+
+</body>
+</html>
