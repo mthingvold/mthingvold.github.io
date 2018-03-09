@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>ASN3</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+### 215 asn 3 
+### mat534
+### Martin Thingvold
+### 11225399
+### Feb 28, 2018
+</p>
+
+
+<ol>
+<li>
+technical terms
+
+<ol>
+<li>
+linking
+
+<li>
+combinational circuits
+
+<li>
+pseudoinstruction
+
+<li>
+flip-flop
+
+<li>
+first pass
+
+<li>
+benchmark
+
+<li>
+NotANumber
+
+</ol>
+<li>
+computer performance
+
+<ol>
+<li>
+0.5 nanosec cct = 2Ghz clock rate
+	   mips=2*1000/4
+	   = 500
+
+<li>
+CPI=((3*100e6)+(1*400e6))/(500e6)
+	   CPI=1.4
+
+<li>
+Clock cycle time
+	   1/4/750e6=CCT
+	   cct=3e-9
+	   clock rate= 3e9 or 3Ghz
+
+</ol>
+</ol>
+
+<ol>
+<li>
+Arithmetic
+
+<ol>
+<li>
+conversions
+
+<ol>
+<li>
+0   0   0  1   0 0 1 0
+		   128 64 32 16   8 4 2 1
+		   10010
+
+<li>
+ 
+		   A=10=1010
+		   B=11=1011
+		   C=12=1100
+		   answer = 1010 1011 1100
+
+</ol>
+</ol>
+</ol>
+		   
+<ol>
+<li>
+0.1
+		     0.1*2 = 0.2
+		     0.2*2 = 0.4
+		     0.4*2 = 0.8
+		     0.8*2 = 1.6
+		     0.6*2 = 1.2
+		     0.2*2 = 0.4
+		     0.4*2 = 0.8
+		     (repeating)
+		     000 1100
+		     1.10011001100
+		     -4 + 127= 123 =0111 1011
+<table class='center'>
+<tr>
+<td>
+0
+</td>
+<td>
+0111 1011
+</td>
+<td>
+1001 1001 1001 1001 1001 100
+</td>
+</tr>
+</table>
+
+</ol>
+		
+<ol>
+<li>
+
+<table class='center'>
+<tr>
+<td>
+A
+</td>
+<td>
+B
+</td>
+<td>
+C
+</td>
+<td>
+F
+</td>
+</tr>
+</table>
+		  | 0 | 0 | 0 | 1 | A'B'C'
+<table class='center'>
+<tr>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+1
+</td>
+<td>
+0
+</td>
+</tr>
+<tr>
+<td>
+0
+</td>
+<td>
+1
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+</tr>
+</table>
+		  | 0 | 1 | 1 | 1 | A,B',C'
+		  | 1 | 0 | 0 | 1 |  A',B,C
+<table class='center'>
+<tr>
+<td>
+1
+</td>
+<td>
+0
+</td>
+<td>
+1
+</td>
+<td>
+0
+</td>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td>
+1
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+</tr>
+</table>
+		  | 1 | 1 | 1 | 1 |   A,B,C
+
+</ol>
+<blockquote>
+A'.B'.C' + A.B'.C' + A.B'.C' + A.B.C
+(A'+A)B'.C' + ('A+A)B.C
+B'.C' + B.C
+</blockquote>
+		  
+		  
+<ol>
+<li>
+b3b2b1b0 	a3a2a1a0
+	   gi=ai.bi	pi = ai+bi
+	   g(2) +(or) (p(2).g(1))) + (p(1).g(0).p(2)) + (p(0).p(1).p(2)).CarryIn0
+
+<li>
+table
+<table class='center'>
+<tr>
+<td>
+A
+</td>
+<td>
+B
+</td>
+<td>
+C
+</td>
+<td>
+Res
+</td>
+</tr>
+<tr>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+</tr>
+<tr>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+1
+</td>
+<td>
+0
+</td>
+</tr>
+<tr>
+<td>
+0
+</td>
+<td>
+1
+</td>
+<td>
+0
+</td>
+<td>
+1
+</td>
+</tr>
+<tr>
+<td>
+0
+</td>
+<td>
+1
+</td>
+<td>
+1
+</td>
+<td>
+1
+</td>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td>
+0
+</td>
+<td>
+1
+</td>
+<td>
+1
+</td>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td>
+1
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td>
+1
+</td>
+<td>
+1
+</td>
+<td>
+1
+</td>
+</tr>
+</table>
+
+<li>
+
+
+</ol>
+<li>
+machine lang
+
+<ol>
+<li>
+addu can never equal a negative number and there is no overflow detection.
+
+<li>
+
+</ol>
+
+</body>
+</html>
