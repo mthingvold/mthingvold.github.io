@@ -350,7 +350,7 @@ Res
 </table>
 
 <li>
-
+they  allow a gradual decrease to zero of the numbers we can represent as well as ensuring properties such as x = y being equivalent to x - y = 0
 
 </ol>
 <li>
@@ -361,7 +361,43 @@ machine lang
 addu can never equal a negative number and there is no overflow detection.
 
 <li>
+lw $s0,head #load the head into s0 register
+	   addi \(s0, \)s0, 4 #move up one word into the next node 
+	   li \(s0, \)s0,0 #removes the list, assuming that there is no relink
+	   #sets the next memory adress to termination
 
+</ol>
+	   
+<ol>
+<li>
+lw $a0,A #load a
+	   la $a1,B
+	   jal P
+	   sw $v0,A
+
+</ol>
+	   
+<ol>
+<li>
+Object files contain machine code, data and contain other info about debugging for use by the debugger (position of machine language code and source language code) and information to enable the linker to do its job:
+		external label
+		external reference
+		relocation info
+
+<li>
+
+
+<ol>
+<li>
+One adder adds to the program counter executing subsequent statements, the other handles branch statements. The ALU is already doing the arithmetic operations for the circuit and doing comparisons so it can't be used.
+
+<li>
+Branch instructions only affect the program counter, store word only writes a register to a memory location not affecting the register.
+
+<li>
+the ALUSrc/signextended multiplexer takes a sign-extend from 16 bits to 32 bits, in the case of a load immediate instruction it places the 32 bit value into the alu otherwise it will not extend.
+
+</ol>
 </ol>
 
 </body>
