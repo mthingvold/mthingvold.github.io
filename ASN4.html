@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>ASN4</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<ol>
+<li>
+IEEE 754 conversions
+
+<ol>
+<li>
+-0.5625
+	.5625=0.1001
+	normalize 
+	1.0010*2^-1
+	-1+127=126=0111 1110
+
+</ol>
+</ol>
+	
+<table class='center'>
+<tr>
+<td>
+Sign
+</td>
+<td>
+Exponent
+</td>
+<td>
+Mantissa
+</td>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td>
+0000 0000
+</td>
+<td>
+0000 0000 0000 0000 0000 000
+</td>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td>
+0111 1110
+</td>
+<td>
+0010 0000 0000 0000 0000 000
+</td>
+</tr>
+</table>
+<p>
+	10111111000100000000000000000000
+</p>
+	
+<ol>
+<li>
+901.1
+	   901= 1110 0001 01 base 2
+	   0.1=0.00011000110001100011(repeating)
+	   1110 0001 01.000110001100011
+	   normalize
+	   1.1100 0010 1000 1100 0110 0011*2^9
+	   127+9=136=10001000
+<table class='center'>
+<tr>
+<td>
+0
+</td>
+<td>
+1000 1000
+</td>
+<td>
+1100 0010 1000 1100 1100 110
+</td>
+</tr>
+</table>
+
+<li>
+Since the smallest number that can be represented is 2^(-126) the result is NaN bc fraction is non-zero
+
+<li>
+The fraction is zero making the answer positive infinity
+
+</ol>
+
+
+<ol>
+<li>
+ieee to decimal
+
+</ol>
+
+<ol>
+<li>
+-1 (-128 given by sign+127 given by exponent)
+
+<li>
+0
+
+<li>
+NaN
+
+<li>
+-27.0
+
+</ol>
+	   
+<ol>
+<li>
+tables
+
+</ol>
+<table class='center'>
+<tr>
+<td>
+asma
+</td>
+<td>
+asmb
+</td>
+<td>
+ln(n)+euler-mascheroni
+</td>
+<td>
+N
+</td>
+</tr>
+<tr>
+<td>
+1.0
+</td>
+<td>
+1.0
+</td>
+<td>
+0.5772156649
+</td>
+<td>
+1
+</td>
+</tr>
+<tr>
+<td>
+5.187378
+</td>
+<td>
+5.187377
+</td>
+<td>
+5.182385851
+</td>
+<td>
+100
+</td>
+</tr>
+<tr>
+<td>
+9.787613
+</td>
+<td>
+9.787604
+</td>
+<td>
+9.787556037
+</td>
+<td>
+10000
+</td>
+</tr>
+<tr>
+<td>
+14.357358
+</td>
+<td>
+14.392652
+</td>
+<td>
+14.39272622
+</td>
+<td>
+100 0000
+</td>
+</tr>
+<tr>
+<td>
+15.403683
+</td>
+<td>
+16.686031
+</td>
+<td>
+16.69531132
+</td>
+<td>
+1000 0000
+</td>
+</tr>
+</table>
+
+</body>
+</html>
